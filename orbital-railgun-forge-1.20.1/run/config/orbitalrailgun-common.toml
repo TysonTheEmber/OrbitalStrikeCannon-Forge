@@ -1,0 +1,14 @@
+#Common configuration settings
+#Cooldown time for orbital railgun in ticks (20 ticks = 1 second)
+#Range: 200 ~ 12000
+strikeCooldown = 2400
+#Damage dealt by orbital strikes
+#Range: 1.0 ~ 1000000.0
+strikeDamage = 100000.0
+#Radius of orbital strike explosion in blocks
+#Range: 1 ~ 100
+strikeRadius = 24
+#Maximum raycast distance for targeting
+#Range: 50.0 ~ 1000.0
+raycastDistance = 300.0
+

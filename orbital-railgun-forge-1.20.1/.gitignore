@@ -1,0 +1,15 @@
+# Project ignores
+/build/
+/out/
+/bin/
+.gradle/
+.idea/
+*.iml
+
+# User rule: ignore WARP.md and update.md anywhere
+WARP.md
+update.md
+**/WARP.md
+**/update.md
+*.gz
+run/*

@@ -1,0 +1,48 @@
+# Forge mod metadata
+modLoader="javafml"
+loaderVersion="${loader_version_range}"
+license="${mod_license}"
+
+[[mods]]
+modId="${mod_id}"
+version="${mod_version}"
+displayName="${mod_name}"
+credits="Ported to Forge by TysonTheEmber. Original Fabric mod by Mishkis."
+authors="${mod_authors}"
+logoFile="orbitalrailgun_icon.png"
+displayURL="${mod_url}"
+issueTrackerURL="${mod_issue_tracker}"
+description='''
+${mod_description}
+Adds a devastating orbital railgun to Minecraft that can call down strikes from space.
+
+Features:
+- Orbital strikes with visual effects
+- Geckolib-powered 3D item rendering
+- Customizable targeting system
+- Server/client synchronization
+'''
+
+[[dependencies.${mod_id}]]
+modId="forge"
+mandatory=true
+versionRange="${forge_version_range}"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.${mod_id}]]
+modId="minecraft"
+mandatory=true
+versionRange="${minecraft_version_range}"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.${mod_id}]]
+modId="geckolib"
+mandatory=true
+versionRange="[4.0,5.0)"
+ordering="NONE"
+side="BOTH"
+
+[[mixins]]
+config="orbitalrailgun.mixins.json"

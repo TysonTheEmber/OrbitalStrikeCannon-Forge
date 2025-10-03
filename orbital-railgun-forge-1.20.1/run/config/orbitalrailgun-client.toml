@@ -1,0 +1,9 @@
+#Client-side configuration settings
+#Enable visual shader effects for orbital strikes
+enableShaderEffects = true
+#Intensity of visual effects (0.0 to 2.0)
+#Range: 0.0 ~ 2.0
+effectIntensity = 1.0
+#Hide HUD when aiming the railgun
+hideHudWhenAiming = true
+
