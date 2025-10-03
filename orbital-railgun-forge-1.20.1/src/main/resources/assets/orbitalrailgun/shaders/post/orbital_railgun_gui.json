@@ -6,7 +6,10 @@
     {
       "name": "orbitalrailgun:gui",
       "intarget": "minecraft:main",
-      "outtarget": "gui"
+      "outtarget": "gui",
+      "auxtargets": [
+        { "name": "DepthSampler", "id": "minecraft:main", "type": "depth" }
+      ]
     },
     {
       "name": "blit",

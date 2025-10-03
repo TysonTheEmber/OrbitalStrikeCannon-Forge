@@ -4,7 +4,7 @@
 #define MAX_DIST 250.
 
 uniform sampler2D DiffuseSampler;
-uniform sampler2D DiffuseDepthSampler;
+uniform sampler2D DepthSampler;
 uniform mat4 InverseTransformMatrix;
 uniform mat4 ModelViewMat;
 uniform vec3 CameraPosition;
@@ -91,7 +91,7 @@ vec3 worldPos(vec3 point) {
 }
 
 void main() {
-float depth = texture(DiffuseDepthSampler, texCoord).r;
+    float depth = texture(DepthSampler, texCoord).r;
     vec3 start_point = worldPos(vec3(texCoord, 0)) - BlockPosition;
     vec3 end_point = worldPos(vec3(texCoord, depth)) - BlockPosition;
     vec3 dir = normalize(end_point - start_point);
